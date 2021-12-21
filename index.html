@@ -34,5 +34,25 @@
             </div>
          </div>
       </div>
+              <script>
+            document.onkeydown = function (e) {
+                if (e.ctrlKey) {
+                    const { keyCode: c } = e;
+                    switch (c) {
+                        case 83:
+                        case 85:
+                        case 65:
+                        case 73:
+                        case 123:
+                            e.preventDefault();
+                            break;
+                    }
+                }
+            };
+            window.addEventListener("contextmenu", function (e) {
+                e.preventDefault();
+                alert("Stop trying retard")
+            }, false);
+        </script>  
    </body>
 </html>
