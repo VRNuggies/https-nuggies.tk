@@ -38,10 +38,17 @@ body,html{
     height:auto;
     width:auto
 }
-.disclaimer{
+.disclaimer1{
     font-family:Lato,sans-serif;
     margin-top:25px;
     font-size:12px;
+    color:#d3d3d3;
+    text-align:justify
+}
+.disclaimer2{
+    font-family:Lato,sans-serif;
+    margin-top:25px;
+    font-size:50px;
     color:#d3d3d3;
     text-align:justify
 }
