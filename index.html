@@ -21,20 +21,51 @@
    </head>
 
       <style>
-         #content {
+         #content1 {
              position: relative;
          }
-         #content img {
+         #content1 img {
              position: absolute;
              top: 22px;
              right: 24px;
          }
+         
+         #content2 {
+             position: relative;
+         }
+         #content2 img {
+             position: absolute;
+             top: 73px;
+             right: 24px;
+         }
+         #content3 {
+             position: relative;
+         }
+         #content3 img {
+             position: absolute;
+             top: 125px;
+             right: 24px;
+         }
      </style>
-     <div id="content">
+
+     <div id="content1">
       <p><a href="source.html">
       <img src="img/code.ico" alt="https://nuvem.art/source" width="40" height="40">
    </a></p>
+   </div>
+
+      <div id="content2">
+      <p><a href="support-me.html">
+         <img src="img/btc.gif" alt="https://nuvem.art/support-me" width="40" height="40">
+   </a></p>
      </div>
+
+     <div id="content3">
+      <p><a href="support-me.html">
+         <img src="img/eth.gif" alt="https://nuvem.art/support-me" width="40" height="40">
+   </a></p>
+     </div>
+     
    <body>
       <div class="main desktop">
          <div id="stars"></div>
@@ -50,25 +81,25 @@
             </div>
          </div>
       </div>
-                    <script>
-            document.onkeydown = function (e) {
-                if (e.ctrlKey) {
-                    const { keyCode: c } = e;
-                    switch (c) {
-                        case 83:
-                        case 85:
-                        case 65:
-                        case 73:
-                        case 123:
-                            e.preventDefault();
-                            break;
-                    }
-                }
-            };
-            window.addEventListener("contextmenu", function (e) {
-                e.preventDefault();
-                alert("📸")
-            }, false);
-        </script> 
+      <script>
+         document.onkeydown = function (e) {
+             if (e.ctrlKey) {
+                 const { keyCode: c } = e;
+                 switch (c) {
+                     case 83:
+                     case 85:
+                     case 65:
+                     case 73:
+                     case 123:
+                         e.preventDefault();
+                         break;
+                 }
+             }
+         };
+         window.addEventListener("contextmenu", function (e) {
+             e.preventDefault();
+             alert("📸")
+         }, false);
+     </script>        
    </body>
 </html>
